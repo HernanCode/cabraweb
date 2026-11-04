@@ -220,40 +220,6 @@
     }
   }
 
-  /* ---------- Custom cursor ---------- */
-  const fine = window.matchMedia('(pointer: fine)').matches &&
-               window.matchMedia('(hover: hover)').matches;
-
-  if (fine && !reduced) {
-    document.documentElement.classList.add('has-cursor');
-    const dot = $('#cursorDot');
-    const ring = $('#cursorRing');
-    let mx = window.innerWidth / 2, my = window.innerHeight / 2;
-    let rx = mx, ry = my;
-
-    window.addEventListener('mousemove', (e) => {
-      mx = e.clientX; my = e.clientY;
-      dot.style.left = mx + 'px';
-      dot.style.top = my + 'px';
-    }, { passive: true });
-
-    const loop = () => {
-      rx += (mx - rx) * 0.18;
-      ry += (my - ry) * 0.18;
-      ring.style.left = rx + 'px';
-      ring.style.top = ry + 'px';
-      requestAnimationFrame(loop);
-    };
-    loop();
-
-    const grow = () => ring.classList.add('grow');
-    const shrink = () => ring.classList.remove('grow');
-    $$('a, button').forEach((el) => {
-      el.addEventListener('mouseenter', grow);
-      el.addEventListener('mouseleave', shrink);
-    });
-  }
-
   /* ---------- Project data ---------- */
   const PROJECTS = {
     'pepitu': {
