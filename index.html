@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CABRA — Estudi de disseny</title>
+<meta name="description" content="CABRA és un estudi de disseny independent a Navàs i Barcelona. Fem marques, webs i campanyes des del 2005.">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:title" content="CABRA — Estudi de disseny">
+<meta property="og:description" content="Fem marques, webs i campanyes. Estudi independent des del 2005.">
+<meta property="og:image" content="assets/hero-pepitu.webp">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preload" as="image" href="assets/hero-pepitu.webp" fetchpriority="high">
+<link rel="preload" as="font" type="font/otf" href="assets/fonts/ppneuemontreal-book.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="assets/fonts/ppneuemontreal-medium.otf" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="logo-cabra" viewBox="0 0 86 19">
+    <path d="M0 9.5c0 5.546 3.855 9.348 8.893 9.348 5.234 0 8.133-3.316 8.442-7.89l-3.377-.143c-.253 2.687-1.829 4.888-5.065 4.888-3.152 0-5.235-2.4-5.235-6.203 0-3.802 2.083-6.203 5.235-6.203 3.236 0 4.812 2.2 5.065 4.888l3.377-.143c-.31-4.545-3.208-7.89-8.442-7.89C3.855.152 0 3.954 0 9.5ZM23.894.495l-7.176 18.01h3.546l1.716-4.46h7.542l1.773 4.46h3.743L27.806.495h-3.912Zm1.773 4.06h.112l2.674 6.746H23.05l2.617-6.746ZM50.812 13.56c0-2.573-1.66-4.003-3.8-4.403 1.914-.314 3.265-1.744 3.265-3.773 0-2.945-1.914-4.889-6.388-4.889h-7.88v18.01h8.33c4.137 0 6.473-1.83 6.473-4.946Zm-6.867-2.86c2.195 0 3.265.973 3.265 2.488 0 1.486-1.07 2.43-3.265 2.43h-4.502V10.7h4.502Zm-4.502-7.317h4.22c2.111 0 3.012.971 3.012 2.315 0 1.344-.9 2.287-3.011 2.287h-4.221V3.383ZM67.465 18.505c-.59-.658-.675-1.572-.9-4.231-.197-2.115-1.238-3.316-3.264-3.716 2.166-.286 3.911-1.858 3.911-4.574 0-3.345-2.223-5.489-6.754-5.489h-8.02v18.01h3.461v-6.66h4.165c2.026 0 2.927.914 3.068 2.944.14 2 .365 3.23.731 3.716h3.602ZM55.9 9.043v-5.66h4.08c2.562 0 3.744 1.057 3.744 2.858 0 1.944-1.182 2.802-3.743 2.802H55.9ZM74.856.495l-7.176 18.01h3.546l1.716-4.46h7.542l1.773 4.46H86L78.768.495h-3.912Zm1.773 4.06h.112l2.674 6.746h-5.403l2.617-6.746Z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#main">Saltar al contingut</a>
+
+<div class="page-scrim" id="pageScrim" aria-hidden="true"></div>
+
+<header class="header" id="header">
+  <nav class="nav nav--left" aria-label="Navegació principal">
+    <a href="#estudi">Estudi</a>
+    <a href="#casos">Casos</a>
+    <a href="#serveis">Serveis</a>
+  </nav>
+
+  <a class="logo" href="#top" aria-label="CABRA, inici">
+    <svg class="logo-svg" viewBox="0 0 86 19" aria-hidden="true" focusable="false"><use href="#logo-cabra"/></svg>
+  </a>
+
+  <div class="header-right">
+    <div class="header-social" aria-label="Xarxes socials">
+      <a href="#" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1-.02 5 2.5 2.5 0 0 1 .02-5ZM3 9h4v12H3zM9 9h3.8v1.7h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg>
+      </a>
+    </div>
+    <a class="header-cta" href="#contacte">Contacta <span aria-hidden="true">→</span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Obrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Menú">
+  <a href="#estudi">Estudi</a>
+  <a href="#casos">Casos</a>
+  <a href="#serveis">Serveis</a>
+  <a href="#contacte">Contacte</a>
+  <div class="mobile-menu-foot">
+    <a href="mailto:hola@cabra.design">hola@cabra.design</a>
+    <p>Navàs &amp; Barcelona</p>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Presentació">
+    <div class="hero-head">
+      <h1 class="hero-title">
+        <span class="hero-line">Recerca i <em>Disseny</em></span>
+      </h1>
+    </div>
+
+    <div class="hero-stage">
+      <div class="hero-slides">
+        <div class="hero-slide on">
+          <img src="assets/hero-pepitu.webp" alt="Interior del restaurant PEPITU, a Manresa" width="2400" height="1350" fetchpriority="high" decoding="async" style="object-position:50% 42%">
+        </div>
+        <div class="hero-slide">
+          <img src="assets/hero-cafes-serra.webp" alt="Clienta amb una bossa de cafè de Cafès Serra" width="2400" height="1350" loading="lazy" decoding="async" style="object-position:50% 38%">
+        </div>
+        <div class="hero-slide">
+          <img src="assets/hero-althaia.webp" alt="Fotograma d'un vídeo de marca d'Althaia" width="2400" height="1350" loading="lazy" decoding="async" style="object-position:50% 50%">
+        </div>
+      </div>
+      <span class="hero-dots" aria-hidden="true">
+        <i class="on"></i><i></i><i></i>
+      </span>
+    </div>
+  </section>
+
+  <!-- ESTUDI / DECLARACIÓ -->
+  <section class="statement" id="estudi" aria-labelledby="statementTitle">
+    <div class="statement-inner">
+      <h2 class="statement-text reveal" id="statementTitle">
+        <span class="line"><span class="line-in">Fem marques,</span></span>
+        <span class="line"><span class="line-in">webs i</span></span>
+        <span class="line"><span class="line-in"><em>campanyes.</em></span></span>
+      </h2>
+      <p class="statement-micro reveal">Estudi independent — des del 2005</p>
+    </div>
+  </section>
+
+  <!-- CASOS -->
+  <section class="projects" id="casos" aria-labelledby="casesTitle">
+    <div class="projects-head">
+      <h2 class="projects-title reveal" id="casesTitle">Casos</h2>
+      <p class="projects-sub reveal">Treball seleccionat — <span class="projects-count">8</span> projectes</p>
+    </div>
+
+    <div class="work-grid">
+      <div class="work-row work-row--1">
+        <a class="work-card reveal" href="#" data-project="pepitu" aria-label="Veure el projecte Pepitu">
+          <span class="work-media">
+            <img src="assets/case-pepitu.webp" alt="Interior del restaurant PEPITU, a Manresa" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Pepitu</span>
+            <span class="work-desc">Del nom a l'interiorisme.</span>
+          </span>
+        </a>
+
+        <a class="work-card reveal" href="#" data-project="cafes-serra" aria-label="Veure el projecte Cafès Serra">
+          <span class="work-media">
+            <img src="assets/case-cafes-serra.webp" alt="Bosses de cafè de Cafès Serra" width="1400" height="1750" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Cafès Serra</span>
+            <span class="work-desc">Del nom a l'envàs i la web.</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--2">
+        <a class="work-card reveal" href="#" data-project="sikkema" aria-label="Veure el projecte Sikkema">
+          <span class="work-media">
+            <img src="assets/case-sikkema-cover.webp" alt="Samarreta de la identitat Sikkema" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Sikkema</span>
+            <span class="work-desc">Una identitat que no caduca.</span>
+          </span>
+        </a>
+
+        <a class="work-card reveal" href="#" data-project="althaia" aria-label="Veure el projecte Althaia">
+          <span class="work-media">
+            <img src="assets/case-althaia-2.webp" alt="Fotograma del vídeo d'Althaia" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Althaia</span>
+            <span class="work-desc">Una gràfica per a cada vídeo.</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="work-row work-row--3">
+        <a class="work-card reveal" href="#" data-project="parc-sanitari" aria-label="Veure el projecte Parc Sanitari SJD">
+          <span class="work-media">
+            <img src="assets/case-parc-sanitari.webp" alt="Personal sanitari del Parc Sanitari SJD" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Parc Sanitari SJD</span>
+            <span class="work-desc">Comunicació que apropa.</span>
+          </span>
+        </a>
+
+        <a class="work-card reveal" href="#" data-project="clinica-dental" aria-label="Veure el projecte Clínica Dental Basterretxea">
+          <span class="work-media">
+            <img src="assets/case-clinica-dental.webp" alt="Sessió a la Clínica Dental Basterretxea" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Clínica Dental Basterretxea</span>
+            <span class="work-desc">Un logotip serè.</span>
+          </span>
+        </a>
+
+        <a class="work-card reveal" href="#" data-project="dduueett" aria-label="Veure el projecte Dduueett">
+          <span class="work-media">
+            <img src="assets/case-dduueett.webp" alt="Web de Dduueett" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">Dduueett</span>
+            <span class="work-desc">Una web que ho ordena tot.</span>
+          </span>
+        </a>
+      </div>
+<!-- 
+      <div class="work-row work-row--4">
+        <a class="work-card reveal" href="#" data-project="pdepages" aria-label="Veure el projecte PdePagès">
+          <span class="work-media">
+            <img src="assets/case-pdepages.webp" alt="Web de PdePagès" width="1600" height="1100" loading="lazy" decoding="async">
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </span>
+          <span class="work-caption">
+            <span class="work-name">PdePagès</span>
+            <span class="work-desc">Del camp a la taula.</span>
+          </span>
+        </a>
+      </div> -->
+    </div>
+
+    <div class="projects-cta reveal">
+      <a class="btn-projects" href="#">Veure tots els projectes <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- SERVEIS -->
+  <section class="services" id="serveis" aria-labelledby="servicesTitle">
+    <div class="services-bgs" aria-hidden="true">
+      <div class="svc-bg on" data-index="0" style="background-image:url('assets/case-pepitu-3.webp')"></div>
+      <div class="svc-bg" data-index="1" style="background-image:url('assets/svc-web-dduueett.webp')"></div>
+      <div class="svc-bg" data-index="2" style="background-image:url('assets/case-cafes-serra-detail.webp')"></div>
+      <div class="svc-bg" data-index="3" style="background-image:url('assets/case-parc-sanitari-2.webp')"></div>
+      <span class="services-shade"></span>
+    </div>
+
+    <div class="services-inner">
+      <p class="services-micro">Serveis</p>
+      <h2 class="services-list" id="servicesTitle">
+        <button class="svc on" type="button" data-index="0">Marques</button>
+        <button class="svc" type="button" data-index="1">Web</button>
+        <button class="svc" type="button" data-index="2">Xarxes socials</button>
+        <button class="svc" type="button" data-index="3">Publicitat</button>
+      </h2>
+    </div>
+  </section>
+
+  <!-- SHOWCASE · carrusel corbat + ganxo -->
+  <section class="showcase" id="showcase" aria-label="Tancament">
+    <div class="arc" id="arc" aria-hidden="true">
+      <div class="arc-track" id="arcTrack"></div>
+    </div>
+    <div class="showcase-hook">
+      <h2 class="showcase-title reveal">Transformem<br>la teva marca<br><em>junts.</em></h2>
+    </div>
+  </section>
+
+</main>
+
+<!-- CONTACTE / FOOTER -->
+<footer class="contact" id="contacte" aria-labelledby="contactTitle">
+  <div class="contact-inner">
+    <div class="contact-top">
+      <h2 class="contact-title reveal" id="contactTitle">Parlem-ne.</h2>
+      <a class="contact-mail reveal" href="mailto:hola@cabra.design">hola@cabra.design</a>
+    </div>
+
+    <div class="contact-mid reveal">
+      <p class="contact-place">Navàs &amp; Barcelona</p>
+      <nav class="contact-socials" aria-label="Xarxes socials">
+        <a href="#" rel="noopener">Instagram ↗</a>
+        <a href="#" rel="noopener">LinkedIn ↗</a>
+        <a href="#" rel="noopener">Behance ↗</a>
+      </nav>
+    </div>
+
+    <div class="contact-mark" aria-hidden="true">
+      <svg viewBox="0 0 86 19"><use href="#logo-cabra"/></svg>
+    </div>
+
+    <div class="contact-bottom">
+      <p>© <span id="year">2026</span> CABRA</p>
+      <a href="#top">Torna a dalt ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- OVERLAY PROJECTE -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlayName" aria-hidden="true">
+  <button class="overlay-close" id="overlayClose" type="button" aria-label="Tancar">×</button>
+  <div class="overlay-scroll">
+    <div class="overlay-head">
+      <p class="overlay-sector" id="overlaySector"></p>
+      <h2 class="overlay-name" id="overlayName"></h2>
+      <p class="overlay-line" id="overlayLine"></p>
+    </div>
+    <div class="overlay-hero" id="overlayHero"></div>
+    <div class="overlay-gallery" id="overlayGallery"></div>
+    <div class="overlay-foot">
+      <button class="overlay-next" id="overlayNext" type="button">Següent cas <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<noscript>
+  <style>
+    .reveal{opacity:1!important;transform:none!important}
+    .line-in{transform:none!important;opacity:1!important}
+  </style>
+</noscript>
+
+<script src="app.js?v=2"></script>
+</body>
+</html>
