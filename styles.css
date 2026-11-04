@@ -92,16 +92,12 @@ h1, h2, h3 {
   transition: background .35s var(--ease), border-color .35s var(--ease);
 }
 .header.scrolled {
-  background: rgba(255, 255, 255, .82);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  border-bottom-color: rgba(20, 20, 20, .07);
+  background: #FFFFFF;
+  border-bottom-color: rgba(20, 20, 20, .08);
 }
 .header.on-dark {
   color: var(--bg);
   background: transparent;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
   border-bottom-color: transparent;
 }
 .header.menu-open {
